@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+  }
+  *, *::after, *::before {
+    box-sizing: border-box;
+  }
+
+body {
+    text-align: center;
+    display: flex;
+    margin: 0 auto;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow: scroll;
+    margin: 0 auto; 
+}
+.background {
+    /* background-image: url("../images/1033223240-preview.mp4");
+    background-repeat: no-repeat;
+    background-size: cover; */
+    z-index: 0;
+    flex-grow: 1;
+    padding: 40px; 
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+  }
+
+.container2 {
+    max-width: 960px;
+    background: black;
+    opacity: .5;
+    z-index: 2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 40px 80px 40px 40px;
+    margin: 0 auto;
+    overflow: auto;
+    margin-bottom: 40px;
+}
+
+/*
+  ========================================
+  Header - Nav Bar
+  ========================================
+*/
+.container1 {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("../images/background/micro_carbon.png");
+  padding: 20px 40px 20px 40px;
+  color: silver;
+  font-family:'Raleway', sans-serif;
+  border: 1px solid transparent;
+  z-index: 1;
+  box-shadow: 2px 4px 8px black;
+}
+
+nav a {
+  color: silver;
+  padding: .25rem 0;
+  margin-left: 1rem;
+}
+
+nav a:hover {
+  color: grey;
+  text-decoration: none;
+  border-bottom: 2px solid grey;
+}
+
+.name {
+  line-height: 40px;
+}
+
+
+/*
+  ========================================
+  Nav Bar
+  ========================================
+*/
+.navbar {
+    flex: 70%;
+    text-align: right;
+    padding: right;
+}
+
+.navbar a {
+    font-size: 16px;
+    color: silver;
+    line-height: 16px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+
+nav a:hover {
+    color: grey;
+}
+
+#navButton2 {
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+footer {
+    background-image: url("../images/background/micro_carbon.png");
+    color: grey;
+    border: 1px solid transparent;
+    z-index: 1;
+    box-shadow: 10px -8px 10px -6px black;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%; 
+}
+/*
+  ========================================
+  typography
+  ========================================
+*/
+h5, .container1 p  {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem; 
+    color: silver;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 40px; 
+}
+
+h6 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.5rem; 
+    color: silver;
+    margin: 40px; 
+}
+.container2 p {
+    font-size: 16px; 
+    padding: 0 20px; 
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: silver;
+}

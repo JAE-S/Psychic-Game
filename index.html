@@ -1,51 +1,68 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <Title>Psychic Game</Title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel|Raleway:100&display=swap" rel="stylesheet">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
     </head>
 
     <body>
-        <header> 
-            <h1>The Psychic Game</h1>
-        </header>
 
-        <main>
-            <div> 
-                <div class="row">
-                    <h3>You chose:</h3>
-                    <p id="user-guess"></p>
-                </div>
-                <div class="row">
-                    <h3>The computer chose:</h3>
-                    <p id="computer-choice"></p>
-                </div>
-            </div>
-            <div>
-                <div class="row">
-                    <h3>Remaining Guesses:</h3>
+            <header class="align-items-center">
+                    <div class="container1">
+                        <div class="d-flex flex-column flex-md-row align-items-center">
+                            <h4 class="my-0 mr-md-auto">Jessie Sholler</h4>
+                                <nav class="my-2 my-md-0 mr-md-0">
+                                      <a href="../../JES_homework_02/Bootstrap-Portfolio/index.html" target="_blank">About</a>
+                                      <a href="../../JES_homework_02/Bootstrap-Portfolio/portfolio.html" target="_blank">portfolio</a>
+                                      <a href="../../JES_homework_02/Bootstrap-Portfolio/contact.html" target="_blank">Contact</a>
+                                </nav>
+                        </div>
+                    </div>           
+                </header> 
+
+        <main class="background">
+                <video autoplay muted loop id="myVideo">
+                    <source src="assets/images/Abstract_Blur_4K_Motion_Background_Loop.mp4" type="video/mp4"  alt="Your browser does not support HTML5 video.">
+                </video>
+            <div class="container2"> 
+                    <h5>Psychic Game</h5>
+                    <div id="instructions">
+                        <p>What letter am I thinking of?</p> 
+                        <p>Press a key [ a - z ] to begin. There are 10 guesses per round. Good Luck!</p>
+                    </div>
+                <!--Remaining Guesses-->
+                    <h6>Remaining Guesses: </h6>
                     <p id="remaining-guesses"></p>
-                </div>
                 <div class="row">
-                    <h3>So far you have guessed:</h3>
-                    <p id="current-guesses"></p>
+                <!--Computer Guess-->
+                    <div class="col-lg-6 col-md-6 sol-xs-">
+                        <h6>The computer chose: </h6>
+                        <p id="computer-choice"></p>
+                    </div>
+                <!--Current Guesses-->
+                    <div class="col-lg-6 col-md-6 sol-xs-">
+                        <h6>So far you have guessed: </h6>
+                        <p id="current-guesses"></p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <div class="row">
-                    <h3>Wins:</h3> 
+                <!--Wins-->
+                    <h6>Wins:</h6> 
                     <p id="user-wins"></p>
-                </div>
-                <div class="row">
-                    <h3>Losses</h3> 
+                <!--Losses-->
+                    <h6>Losses</h6> 
                     <p id="losses"></p> 
-                </div>
             </div>
         </main>
 
-        <footer>
-
+        <footer class="align-items-center text-center sticky-bottom"> 
+            <small>&copycopywrite</small>
         </footer>
+        
 
         <script type="text/javascript" src="assets/javascript/game.js"></script>
 
